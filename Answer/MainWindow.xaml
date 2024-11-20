@@ -1,0 +1,63 @@
+﻿<Window x:Class="Answer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Answer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock>
+        Вам нужно ответить на 4 простых вопроса:
+            </TextBlock>
+
+            <TextBlock>
+        1. Какая марка авто лучше?
+            </TextBlock>
+
+            <StackPanel Name="Question1">
+                <RadioButton x:Name="Q1_1" IsChecked="False" Content="Toyota" Tag="Correct"/>
+                <RadioButton x:Name="Q1_2" IsChecked="False" Content="BMW"/>
+                <RadioButton x:Name="Q1_3" IsChecked="False" Content="Mercedes"/>
+                <RadioButton x:Name="Q1_4" IsChecked="False" Content="Ford"/>
+            </StackPanel>
+
+            <TextBlock>
+        2. Какой язык самый сложный из представленных?
+            </TextBlock>
+
+            <StackPanel Name="Question2">
+                <RadioButton x:Name="Q2_1" IsChecked="False" Content="Японский"/>
+                <RadioButton x:Name="Q2_2" IsChecked="False" Content="Китайский" Tag="Correct"/>
+                <RadioButton x:Name="Q2_3" IsChecked="False" Content="Корейский"/>
+                <RadioButton x:Name="Q2_4" IsChecked="False" Content="Русский"/>
+            </StackPanel>
+
+            <TextBlock>
+        Что значит название марки машин "Subaru"
+            </TextBlock>
+
+            <StackPanel Name="Question3">
+                <RadioButton x:Name="Q3_1" IsChecked="False" Content="В Древней Японии был самурай с таким именем"/>
+                <RadioButton x:Name="Q3_2" IsChecked="False" Content="В переводе с Японского языка: Галактика"/>
+                <RadioButton x:Name="Q3_3" IsChecked="False" Content="В Древней Японии была гейша с таким именем"/>
+                <RadioButton x:Name="Q3_4" IsChecked="False" Content="В переводе с Японского языка: Созвездие" Tag="Correct"/>
+            </StackPanel>
+
+            <TextBlock>
+        Кто правит миром?
+            </TextBlock>
+
+            <StackPanel Name="Question4">
+                <RadioButton x:Name="Q4_1" IsChecked="False" Content="Европа"/>
+                <RadioButton x:Name="Q4_2" IsChecked="False" Content="Азия" Tag="Correct"/>
+                <RadioButton x:Name="Q4_3" IsChecked="False" Content="Россия"/>
+                <RadioButton x:Name="Q4_4" IsChecked="False" Content="Штаты"/>
+            </StackPanel>
+
+            <Button Content="Отправить ответ" Height="42" Margin="50,40,40,0" Width="500" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
